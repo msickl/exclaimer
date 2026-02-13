@@ -1,0 +1,19 @@
+{
+    "app" : {
+        "listen" : "127.0.0.1",
+        "port" : 5000,
+        "debug" : true,
+        "masterkey" : "*****"
+    },
+    "postgres": {
+        "host": "localhost",
+        "port": "5432",
+        "dbname": "exclaimer",
+        "user": "sa",
+        "pass": "****"
+    },
+    "template": {
+        "protocol" : "https",
+        "hostname" : "intra.zimmer-austria.com"
+    }
+}

@@ -1,0 +1,15 @@
+{
+	"server" : "ex.zimmer.local",
+	"port" : 443,
+	"protocol" : "https",
+	"token" : "********",
+	"smtp": {
+		"server" : "smtp.zimmer.local",
+		"from" : "noreply@zimmer-austria.com",
+		"to": [
+			"m.sickl@zimmer-austria.com",
+			"admin@zimmer-austria.com",
+			"h.themessl@zimmer-austria.com"
+		]
+	}
+}

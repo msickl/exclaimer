@@ -1,0 +1,16 @@
+curl -X POST http://localhost:5000/api/token/create \
+     -H "X-Master-Key: ********************" \
+     -H "Content-Type: application/json" \
+     -d '{"description": "Sync API"}'
+
+
+curl -X POST http://localhost:5000/api/users \
+     -H "Authorization: Bearer <token>" \
+     -H "Content-Type: application/json" \
+     -d '[{"employeeid":"1-1234","objectsid":"abc"}]'
+
+
+curl -X POST http://localhost:5000/api/token/revoke \
+     -H "Authorization: Bearer <valid_admin_token>" \
+     -H "Content-Type: application/json" \
+     -d '{"token":"<token_to_revoke>"}'

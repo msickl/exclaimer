@@ -1,0 +1,13 @@
+[Unit]
+Description=Exclaimer Web Service
+After=network.target
+
+[Service]
+User=root
+Group=root
+WorkingDirectroy=/opt/exclaimer/
+ExecStart=/usr/bin/python3 /opt/exclaimer/run.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
